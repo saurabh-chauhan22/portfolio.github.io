@@ -1,2 +1,4 @@
 # portfolio
-Saurabh Chauhan Portfolio of software engineer
+Saurabh Chauhan 
+1.0
+Master of Science (Computer)
