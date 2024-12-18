@@ -4,60 +4,70 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
-  --blue: #007bff;
+ :root {
+  --blue: #007ACC;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
-  --yellow: #079933;
+  /* Using the secondary accent here for yellow: */
+  --yellow: #FF9933;
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
+
+  /* Base light background and grayscale adjustments */
   --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #0cb63f;
-  --secondary: #6c757d;
+  --gray: #555555; /* Slightly lighter gray for secondary text */
+  --gray-dark: #333333; /* Dark charcoal for primary text */
+
+  /* Adjusting theme colors */
+  --primary: #007ACC;   /* Primary accent (buttons, highlights) */
+  --secondary: #555555; /* Secondary text */
   --success: #28a745;
   --info: #17a2b8;
-  --warning: #ffc107;
+  --warning: #FF9933;    /* Warm orange for secondary accent */
   --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
+  --light: #F5F5F5;      /* Light background */
+  --dark: #333333;
+
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace; }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    tap-highlight-color: rgba(0, 0, 0, 0);
+  }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff; }
+    margin: 0;
+    font-family: var(--font-family-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333333; /* primary text color */
+    text-align: left;
+    background-color: #F5F5F5; /* light background */
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -68,13 +78,13 @@ hr {
   height: 0;
   overflow: visible; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem; }
+  h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+  }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem; }
+p, ol, ul, dl, address, blockquote, figure, hr {
+    color: #555555; /* slightly lighter secondary text */
+  }
 
 abbr[title],
 abbr[data-original-title] {
@@ -133,12 +143,14 @@ sup {
   top: -.5em; }
 
 a {
-  color: #11b635;
-  text-decoration: none;
-  background-color: transparent; }
+    color: #007ACC; /* primary accent for links */
+    text-decoration: none;
+    background-color: transparent;
+  }
   a:hover {
-    color: #0d962a;
-    text-decoration: underline; }
+    color: #FF9933; /* warm orange on hover */
+    text-decoration: underline;
+  }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -8147,7 +8159,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background: #f0f7ad ;
+  background: #F5F5F5 ;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
@@ -8198,7 +8210,7 @@ h1, h2, h3, h4, h5,
     margin: 0 auto;
     padding: 0; }
   .ftco-navbar-light .navbar-brand {
-    color: #fff;
+    color: #acacac;
     padding-top: .7rem;
     padding-bottom: .7rem; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
@@ -8462,7 +8474,7 @@ h1, h2, h3, h4, h5,
         bottom: 0;
         left: 0;
         right: 0;
-        background: #000000;
+        background: #F5F5F5;
         opacity: 0; }
       .owl-carousel.home-slider .slider-item .slider-text {
         height: 750px;
@@ -8541,7 +8553,7 @@ h1, h2, h3, h4, h5,
           z-index: 1; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
           font-size: 60px;
-          color: #fff;
+          color: #acacac;
           line-height: 1.2;
           font-weight: 800; }
           .owl-carousel.home-slider .slider-item .slider-text h1 span {
