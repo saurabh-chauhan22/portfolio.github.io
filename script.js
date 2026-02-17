@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const roleSpecificTitles = {
     aiml: [
       'AI/ML Engineer',
-      'Data Scientist',
+      'Gen AI Engineer',
       'Data Engineer'
     ],
     backend: [
-      'Backend Engineer',
+      'Software Engineer',
       'Python Developer',
       'Java Developer',
       'Web Developer'
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update page title
     const titleMap = {
-      'aiml': 'Saurabh Chauhan | AI/ML Engineer & Data Scientist',
+      'aiml': 'Saurabh Chauhan | AI/ML Engineer & Gen AI Engineer',
       'backend': 'Saurabh Chauhan | Backend Engineer & System Architect'
     };
     document.title = titleMap[role] || document.title;
