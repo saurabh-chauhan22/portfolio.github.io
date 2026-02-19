@@ -69,7 +69,7 @@ npx serve
 - **Email**: saurabh.chauhan2298@gmail.com
 - **LinkedIn**: [linkedin.com/in/saurabh-chauhan2298](https://www.linkedin.com/in/saurabh-chauhan2298/)
 - **GitHub**: [github.com/saurabh-chauhan22](https://github.com/saurabh-chauhan22)
-- **Location**: Springfield, Illinois, USA
+- **Location**: Chicago, Illinois, USA
 
 ## 📄 License
 
