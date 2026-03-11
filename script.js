@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isDeleting) {
       typingElement.textContent = currentRole.substring(0, charIndex - 1);
       charIndex--;
-      typingSpeed = 50;
+      typingSpeed = 80;
     } else {
       typingElement.textContent = currentRole.substring(0, charIndex + 1);
       charIndex++;
